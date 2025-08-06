@@ -1,17 +1,14 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { GoArrowUpRight } from "react-icons/go";
-import { useLocale } from "next-intl";
+import { getLocale, getTranslations } from "next-intl/server";
 
 import { Button } from "./ui/button";
 import { LocaleSelector } from "./locale-selector";
-import { useT } from "@/hooks/useNextIntl";
 
-export const Header = () => {
-  const t = useT("header");
-  const locale = useLocale();
+export const Header = async () => {
+  const t = await getTranslations("header");
+  const locale = await getLocale();
   const isEnglish = locale === "en";
 
   const links = [
