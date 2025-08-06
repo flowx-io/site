@@ -1,0 +1,23 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "start-now": "Start Now"
+  },
+  "hero": {
+    "badge": "The first system of its kind for managing charitable organizations in the Arab world",
+    "title-highlight": "Digital Revolution",
+    "title-text": "that transforms the way charitable organizations are managed in the Arab world",
+    "description": "FlowX transforms charitable organization management from complexity to simplicity, increasing donations by 100% within 6 months. From Morocco to Iraq, we serve the entire Arab world.",
+    "watch-how": "Watch How It Works",
+    "free-trial": "30-Day Free Trial",
+    "features": {
+      "comprehensive-coverage": "Comprehensive Coverage",
+      "advanced-management": "Advanced Management",
+      "absolute-security": "Absolute Security",
+      "exceptional-growth": "Exceptional Growth"
+    }
+  }
+}
