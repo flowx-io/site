@@ -36,7 +36,7 @@ export function LocaleSelector({ className }: { className?: string }) {
       dir="rtl"
     >
       <SelectTrigger
-        className={cn("w-fit border-none text-[#191615] outline-none ring-0 focus:border-none focus:outline-none focus:ring-0 dark [&>span_svg]:text-muted-foreground/80 [&>span]:flex [&>span]:items-center [&>span]:gap-2 [&>span_svg]:shrink-0", className)}
+        className={cn("w-fit shadow-none border-none text-[#191615] outline-none ring-0 focus:border-none focus:outline-none focus:ring-0 dark [&>span_svg]:text-muted-foreground/80 [&>span]:flex [&>span]:items-center [&>span]:gap-2 [&>span_svg]:shrink-0", className)}
       >
         <SelectValue placeholder="Select language" className="text-[#191615]" />
       </SelectTrigger>

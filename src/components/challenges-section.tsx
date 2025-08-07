@@ -1,35 +1,39 @@
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { GoArrowUpRight } from "react-icons/go";
 import Image from "next/image";
 import { ReactNode } from "react";
 
 export const ChallengesSection = () => {
 
   return (
-    <section id="solutions" className="px-4 md:px-8">
+    <section id="solutions" className="">
       <div className="flex flex-col items-center justify-center">
-        <p className="flex w-fit items-center justify-center text-[10px] md:text-xs md:gap-2 gap-1 px-5 py-2 border-2 font-bold border-[#EDEDF1] rounded-full bg-[linear-gradient(99deg,rgba(255,255,255,0.80)_27.83%,rgba(255,255,255,0.80)_100%)] shadow-[0_2px_4px_0_rgba(0,0,0,0.04)] mb-4">
-          <span className="text-[#1E3768] block">
-            النظام الأول من نوعه لإدارة المؤسسات الخيرية في العالم العربي
-          </span>
+        <div className="px-4 md:px-8">
+          <p className="flex w-fit items-center justify-center text-[10px] md:text-xs md:gap-2 gap-1 px-5 py-2 border-2 font-bold border-[#EDEDF1] rounded-full bg-[linear-gradient(99deg,rgba(255,255,255,0.80)_27.83%,rgba(255,255,255,0.80)_100%)] shadow-[0_2px_4px_0_rgba(0,0,0,0.04)] mb-4">
+            <span className="text-[#1E3768] block">
+              النظام الأول من نوعه لإدارة المؤسسات الخيرية في العالم العربي
+            </span>
 
-          <Image
-            src="/icons/award.svg"
-            alt="logo"
-            width={24}
-            height={24}
-            className="hidden md:block w-fit h-fit"
-          />
+            <Image
+              src="/icons/award.svg"
+              alt="logo"
+              width={24}
+              height={24}
+              className="hidden md:block w-fit h-fit"
+            />
 
-          <Image
-            src="/icons/award.svg"
-            alt="logo"
-            width={20}
-            height={20}
-            className="block md:hidden w-fit h-fit"
-          />
-        </p>
+            <Image
+              src="/icons/award.svg"
+              alt="logo"
+              width={20}
+              height={20}
+              className="block md:hidden w-fit h-fit"
+            />
+          </p>
+        </div>
 
-        <p className="font-bold text-center text-2xl md:text-[40px] pb-4 max-w-2xl">
+        <p className="font-bold text-center text-2xl md:text-[40px] pb-4 max-w-2xl px-4 md:px-8">
           نفهم
           {" "}
           <span className="text-[#43C4A2]">
@@ -39,11 +43,11 @@ export const ChallengesSection = () => {
           التي تواجهها المؤسسات الخيرية
         </p>
 
-        <p className="text-center font-medium text-base md:max-w-lg pb-12">
+        <p className="text-center font-medium text-base md:max-w-lg pb-12 px-4 md:px-8">
           بعد دراسة مئات المؤسسات الخيرية في العالم العربي، حددنا أهم المشاكل التي تعيق كفاءة العمل الخيري ووضعنا الحلول المناسبة
         </p>
 
-        <div className="max-w-4xl flex gap-8 w-full flex-col md:flex-row">
+        <div className="max-w-4xl flex gap-8 w-full flex-col md:flex-row pb-12 px-4 md:px-0">
           <ChallengeCard
             className="border-[#EDEDF1] [background:linear-gradient(175deg,var(--tags-eror-bg,#FEF2F2)_0.84%,#FFF_18.4%)] border-[1.5px] [box-shadow:0_4px_8px_8px_rgba(0,0,0,0.02)]"
             icon={<ChallengeIcon />}
@@ -89,7 +93,7 @@ export const ChallengesSection = () => {
                 icon: "/icons/database.svg",
                 description: "تحويل جميع العمليات الورقية إلى نظام رقمي آمن مع نسخ احتياطية تلقائية"
               },
-              { 
+              {
                 title: " شفافية كاملة",
                 icon: "/icons/chart-up.svg",
                 description: "تتبع فوري لجميع التبرعات والمصروفات مع تقارير تفصيلية للمتبرعين"
@@ -101,90 +105,17 @@ export const ChallengesSection = () => {
               },
             ]}
           />
+        </div>
 
-          {/* <div className=" flex flex-col gap-8 flex-1  rounded-[12px] p-8">
-            <div className="flex justify-center items-center flex-col gap-2 pb-4 border-b border-[#DEE4E7]">
-              <SolutionIcon />
-
-              <p className="text-center font-bold text-2xl">
-                حلولنا المتقدمة
-              </p>
-
-              <p className="text-center font-medium">
-                التحديات التي تواجهها معظم المؤسسات
-              </p>
-            </div>
-
-            <div className="flex flex-col gap-3">
-              <div className="px-4 py-3 flex gap-2 items-start">
-                <Image
-                  src="/icons/security-check.svg"
-                  alt="logo"
-                  width={32}
-                  height={32}
-                />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg font-bold">
-                    التحديات التي تواجهها معظم المؤسسات
-                  </p>
-                  <p className="font-medium">
-                    منصة واحدة تجمع جميع العمليات من إدارة الموظفين إلى التبرعات والتقارير
-                  </p>
-                </div>
-              </div>
-
-              <div className="px-4 py-3 flex gap-2 items-start">
-                <Image
-                  src="/icons/database.svg"
-                  alt="logo"
-                  width={32}
-                  height={32}
-                />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg font-bold">
-                    رقمنة كاملة
-                  </p>
-                  <p className="font-medium">
-                    تحويل جميع العمليات الورقية إلى نظام رقمي آمن مع نسخ احتياطية تلقائية
-                  </p>
-                </div>
-              </div>
-
-              <div className="px-4 py-3 flex gap-2 items-start">
-                <Image
-                  src="/icons/chart-up.svg"
-                  alt="logo"
-                  width={32}
-                  height={32}
-                />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg font-bold">
-                    شفافية كاملة
-                  </p>
-                  <p className="font-medium">
-                    تتبع فوري لجميع التبرعات والمصروفات مع تقارير تفصيلية للمتبرعين
-                  </p>
-                </div>
-              </div>
-
-              <div className="px-4 py-3 flex gap-2 items-start">
-                <Image
-                  src="/icons/zap.svg"
-                  alt="logo"
-                  width={32}
-                  height={32}
-                />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg font-bold">
-                    سرعة وكفاءة
-                  </p>
-                  <p className="font-medium">
-                    أتمتة العمليات وتبسيط الإجراءات لتوفير الوقت والتركيز على العمل الخيري
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div> */}
+        <div className="max-w-4xl w-full [background:linear-gradient(195deg,_#43C4A2_10.85%,_var(--Biscay-600,_#2879E8)_142.24%),_linear-gradient(0deg,_rgba(19,136,112,0.30)_-25.91%,_rgba(19,136,112,0.00)_95.25%)] md:rounded-[12px] p-6 md:p-8 flex justify-center items-center flex-col">
+          <p className="text-[28px] md:text-[40px] font-bold text-center max-w-xs md:max-w-none text-white pb-2">مستعد لحل هذه التحديات؟</p>
+          <p className="text-lg text-center text-white max-w-xl pb-6">انضم إلى أكثر من 500 مؤسسة خيرية في العالم العربي تستخدم فلو إكس لإدارة أعمالها بكفاءة وشفافية عالية</p>
+          <Button className="rounded-full  bg-[#191615] hover:bg-[#191615]/90 h-14 md:w-2xs w-full border-white text-white gap-2 flex items-center">
+            <span>
+              تجربة مجانية لمدة 30 يوماً
+            </span>
+            <GoArrowUpRight className="size-5" />
+          </Button>
         </div>
       </div>
     </section>
@@ -209,7 +140,7 @@ const ChallengeCard = ({
   }[];
 }) => {
   return (
-    <div className={cn("flex flex-col gap-8 flex-1 rounded-[12px] p-8", className)}>
+    <div className={cn("flex flex-col gap-4 md:gap-8 flex-1 rounded-[12px] p-4 md:p-8", className)}>
       <div className="flex justify-center items-center flex-col gap-2 pb-4 border-b border-[#DEE4E7]">
         {icon}
 
