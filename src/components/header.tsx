@@ -14,7 +14,7 @@ export const Header = async () => {
       label: t("home"),
       href: "/",
     },
-        {
+    {
       label: t("services"),
       href: "#our-services",
     },
@@ -65,7 +65,7 @@ export const Header = async () => {
         <div className="flex items-center justify-between gap-4">
           <LocaleSelector className="hidden md:flex" />
           <Link href="/">
-            <Button className="rounded-full bg-[#0F6D5C] h-12 w-28 border-white text-white hover:bg-[#0F6D5C]/90 gap-2 flex items-center">
+            <Button className="rounded-full bg-[#0F6D5C] h-12 w-28 px-5 border-white text-white hover:bg-[#0F6D5C]/90 gap-2 flex items-center">
               <GoArrowUpRight className="size-5" />
               <span className="font-bold">{t("start-now")}</span>
             </Button>

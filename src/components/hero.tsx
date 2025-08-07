@@ -42,7 +42,7 @@ export const Hero = () => {
       </p>
 
       <div className="flex items-center flex-col-reverse md:flex-row gap-4 pb-4 w-full justify-center">
-        <Button className="px-8 py-4 w-full md:w-fit rounded-full h-auto bg-transparent gap-2 border-[#DEE4E7] hover:bg-[#DEE4E7]/50 shadow-[0_2px_4px_0_rgba(0,0,0,0.04)]">
+        <Button className="px-8 py-4 w-full md:w-fit rounded-full h-auto bg-transparent gap-2 border border-[#DEE4E7] hover:bg-[#DEE4E7]/50 shadow-[0_2px_4px_0_rgba(0,0,0,0.04)]">
           <Image src="/icons/computer-video.svg" alt="arrow" width={24} height={24} />
           <span className="text-[#24252D] font-bold">{t("watch-how")}</span>
         </Button>

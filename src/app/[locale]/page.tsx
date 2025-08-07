@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/hero-section";
+import { ChallengesSection } from "@/components/challenges-section";
 import { ServicesSection } from "@/components/services-section";
 import { SolutionsSection } from "@/components/solutions.section";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroSection />
       <ServicesSection />
       <SolutionsSection />
+      <ChallengesSection />
     </div>
   );
 }
