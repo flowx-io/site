@@ -1,10 +1,10 @@
 {
-  "header": {
+  "header": { 
     "home": "Home",
-    "about": "About",
     "services": "Services",
-    "contact": "Contact",
-    "start-now": "Start Now"
+    "solutions": "Challenges & Solutions",
+    "contact": "Contact Us",
+    "start-now": "Start Now"  
   },
   "hero": {
     "badge": "The first system of its kind for managing charitable organizations in the Arab world",
@@ -18,6 +18,62 @@
       "advanced-management": "Advanced Management",
       "absolute-security": "Absolute Security",
       "exceptional-growth": "Exceptional Growth"
+    }
+  },
+  "solutions": {
+    "badge": "The first system of its kind for managing charitable organizations in the Arab world",
+    "title": "All the tools for managing charitable work in one system.",
+    "title-highlight": "managing work",
+    "cards": {
+      "comprehensive-staff-management": {
+        "title": "Comprehensive Staff Management",
+        "features": {
+          "0": "Expense Management",
+          "1": "Smart Analytics Dashboard",
+          "2": "Employee and Volunteer Management",
+          "3": "Beneficiary Management",
+          "4": "Internal Organization Structure Management"
+        }
+      },
+      "professional-donation-management": {
+        "title": "Professional Donation and Donor Management",
+        "features": {
+          "0": "Accurate donation recording and tracking",
+          "1": "Comprehensive donor management",
+          "2": "Public donation collection page",
+          "3": "Smart data filtering",
+          "4": "Enhanced social media reach"
+        }
+      },
+      "donor-experience": {
+        "title": "Donor Experience",
+        "features": {
+          "0": "Dedicated landing page for each campaign",
+          "1": "Easy and secure payment",
+          "2": "Personalized communication messages",
+          "3": "Private dashboard for monthly subscribers",
+          "4": "Building trust and encouraging recurring donations"
+        }
+      },
+      "email-marketing": {
+        "title": "Email Marketing",
+        "features": {
+          "0": "Audience segmentation and smart targeting",
+          "1": "Automatic welcome and thank you messages after each donation",
+          "2": "Accurate performance analytics",
+          "3": "Continuous campaign optimization"
+        }
+      },
+      "flexible-identity-settings": {
+        "title": "Flexible Identity Settings for Your Organization",
+        "features": {
+          "0": "Campaign and visual identity customization",
+          "1": "Social media account integration",
+          "2": "User and permission management",
+          "3": "Full Arabic language support",
+          "4": "General system settings configuration"
+        }
+      }
     }
   }
 }

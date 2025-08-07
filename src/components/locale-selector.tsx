@@ -36,9 +36,9 @@ export function LocaleSelector({ className }: { className?: string }) {
       dir="rtl"
     >
       <SelectTrigger
-        className={cn("w-fit border-none outline-none ring-0 focus:border-none focus:outline-none focus:ring-0 dark [&>span_svg]:text-muted-foreground/80 [&>span]:flex [&>span]:items-center [&>span]:gap-2 [&>span_svg]:shrink-0", className)}
+        className={cn("w-fit border-none text-[#191615] outline-none ring-0 focus:border-none focus:outline-none focus:ring-0 dark [&>span_svg]:text-muted-foreground/80 [&>span]:flex [&>span]:items-center [&>span]:gap-2 [&>span_svg]:shrink-0", className)}
       >
-        <SelectValue placeholder="Select language" className="text-white" />
+        <SelectValue placeholder="Select language" className="text-[#191615]" />
       </SelectTrigger>
       <SelectContent
         className="border-none outline-none ring-0 focus:border-none focus:outline-none focus:ring-0 [&_*[role=option]>span>svg]:text-muted-foreground/80 [&_*[role=option]]:ps-2 [&_*[role=option]]:pe-8 [&_*[role=option]>span]:start-auto [&_*[role=option]>span]:end-2 [&_*[role=option]>span]:flex [&_*[role=option]>span]:items-center [&_*[role=option]>span]:gap-2 [&_*[role=option]>span>svg]:shrink-0"

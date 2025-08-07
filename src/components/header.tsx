@@ -1,28 +1,26 @@
 import Image from "next/image";
 import Link from "next/link";
 import { GoArrowUpRight } from "react-icons/go";
-import { getLocale, getTranslations } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 
 import { Button } from "./ui/button";
 import { LocaleSelector } from "./locale-selector";
+import { cn } from "@/lib/utils";
 
 export const Header = async () => {
   const t = await getTranslations("header");
-  const locale = await getLocale();
-  const isEnglish = locale === "en";
-
   const links = [
     {
       label: t("home"),
       href: "/",
     },
-    {
-      label: t("about"),
-      href: "#about-us",
-    },
-    {
+        {
       label: t("services"),
       href: "#our-services",
+    },
+    {
+      label: t("solutions"),
+      href: "#solutions",
     },
     {
       label: t("contact"),
@@ -32,85 +30,46 @@ export const Header = async () => {
 
   return (
     <header className="container mx-auto pt-8">
-      <div className="py-3 px-4 flex justify-between items-center bg-[#191615] rounded-full">
-        {/* Left side - Logo for English, Start Now button for Arabic */}
-        <div className="flex items-center justify-between gap-4">
-          {isEnglish ? (
-            <>
-              <Image
-                src="/assets/logo.svg"
-                alt="Logo"
-                className="hidden md:block"
-                width={100}
-                height={24}
-              />
-              <Image
-                src="/assets/icon.svg"
-                alt="Logo"
-                className="block md:hidden"
-                width={32}
-                height={32}
-              />
-            </>
-          ) : (
-            <>
-              <Link href="/">
-                <Button className="rounded-full bg-white border-white text-[#191615] hover:bg-white/90 gap-2 flex items-center">
-                  <GoArrowUpRight className="size-5" />
-                  <span className="font-bold">{t("start-now")}</span>
-                </Button>
-              </Link>
-              <LocaleSelector className="hidden md:flex" />
-            </>
-          )}
+      <div className="py-3 px-4 flex justify-between items-center rounded-full bg-[rgba(248,248,248,0.19)] backdrop-blur-[2px] border border-[#EDEDF1]">
+        <div className="flex items-center justify-between gap-4 px-3">
+          <Image
+            src="/assets/logo.svg"
+            alt="Logo"
+            className="hidden md:block"
+            width={100}
+            height={24}
+          />
+          <Image
+            src="/assets/icon.svg"
+            alt="Logo"
+            className="block md:hidden px-3"
+            width={32}
+            height={32}
+          />
         </div>
 
-        {/* Center - Mobile Locale Selector */}
         <LocaleSelector className="flex md:hidden" />
 
-        {/* Center/Right Navigation - Desktop only */}
         <div className="hidden md:flex items-center gap-6">
-          {links.map((link) => (
+          {links.map((link, i) => (
             <Link
               href={link.href}
               key={link.label}
-              className="text-white"
+              className={cn("text-[#191615]", i === 0 && "font-bold")}
             >
               {link.label}
             </Link>
           ))}
         </div>
 
-        {/* Right side - Start Now button for English, Logo for Arabic */}
         <div className="flex items-center justify-between gap-4">
-          {isEnglish ? (
-            <>
-              <LocaleSelector className="hidden md:flex" />
-              <Link href="/">
-                <Button className="rounded-full bg-white border-white text-[#191615] hover:bg-white/90 gap-2 flex items-center">
-                  <GoArrowUpRight className="size-5" />
-                  <span className="font-bold">{t("start-now")}</span>
-                </Button>
-              </Link>
-            </>
-          ) : (
-            <>
-              <Image
-                src="/assets/logo.svg"
-                alt="Logo"
-                className="hidden md:block"
-                width={100}
-                height={24}
-              />
-              <Image
-                src="/assets/icon.svg"
-                alt="Logo"
-                className="block md:hidden"
-                width={32}
-                height={32}
-              />
-            </>
-          )}
+          <LocaleSelector className="hidden md:flex" />
+          <Link href="/">
+            <Button className="rounded-full bg-[#0F6D5C] h-12 w-28 border-white text-white hover:bg-[#0F6D5C]/90 gap-2 flex items-center">
+              <GoArrowUpRight className="size-5" />
+              <span className="font-bold">{t("start-now")}</span>
+            </Button>
+          </Link>
         </div>
       </div>
     </header>
