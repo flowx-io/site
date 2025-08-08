@@ -14,8 +14,81 @@ const cairo = Cairo({
 });
 
 export const metadata: Metadata = {
-  title: "FlowX",
-  description: "",
+  title: {
+    default: "فلو إكس - ثورة رقمية تغيّر طريقة إدارة المؤسسات الخيرية",
+    template: "%s | فلو إكس"
+  },
+  description: "فلو إكس يحول إدارة المؤسسات الخيرية من التعقيد إلى البساطة، مع زيادة التبرعات بنسبة 100% خلال 6 أشهر. النظام الأول من نوعه لإدارة المؤسسات الخيرية في العالم العربي من المغرب إلى العراق.",
+  keywords: [
+    "المؤسسات الخيرية",
+    "إدارة التبرعات",
+    "إدارة الجمعيات",
+    "برامج خيرية",
+    "العالم العربي",
+    "التحول الرقمي",
+    "إدارة المتبرعين",
+    "منصة جمع التبرعات",
+    "charitable organizations",
+    "donation management",
+    "nonprofit management"
+  ],
+  authors: [{ name: "فلو إكس" }],
+  creator: "فلو إكس",
+  publisher: "فلو إكس",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('http://flowxapp.com'),
+  alternates: {
+    canonical: "/",
+    languages: {
+      'ar': '/ar',
+      'en': '/en',
+    },
+  },
+  openGraph: {
+    title: "فلو إكس - ثورة رقمية تغيّر طريقة إدارة المؤسسات الخيرية",
+    description: "فلو إكس يحول إدارة المؤسسات الخيرية من التعقيد إلى البساطة، مع زيادة التبرعات بنسبة 100% خلال 6 أشهر. النظام الأول من نوعه لإدارة المؤسسات الخيرية في العالم العربي.",
+    url: "/",
+    siteName: "فلو إكس",
+    images: [
+      {
+        url: "/assets/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "فلو إكس - ثورة رقمية تغيّر طريقة إدارة المؤسسات الخيرية",
+      },
+    ],
+    locale: "ar_SA",
+    alternateLocale: ["en_US"],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "فلو إكس - ثورة رقمية تغيّر طريقة إدارة المؤسسات الخيرية",
+    description: "فلو إكس يحول إدارة المؤسسات الخيرية من التعقيد إلى البساطة، مع زيادة التبرعات بنسبة 100% خلال 6 أشهر.",
+    images: ["/assets/logo.png"],
+    creator: "@flowx",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    // Add your verification tokens here when you have them
+    // google: "your-google-verification-token",
+    // yandex: "your-yandex-verification-token",
+  },
+  category: "technology",
 };
 
 export default async function RootLayout({
