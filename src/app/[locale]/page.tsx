@@ -4,6 +4,8 @@ import { ServicesSection } from "@/components/sections/services-section";
 import { SolutionsSection } from "@/components/sections/solutions.section";
 import { WhyFlowx } from "@/components/sections/why-flowx-section";
 import { FeaturesSection } from "@/components/sections/features-section";
+import { SuccessStorySection } from "@/components/sections/success-story-section";
+import { ContactUsSection } from "@/components/sections/contact-us-section";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <ChallengesSection />
       <WhyFlowx />
       <FeaturesSection />
+      <SuccessStorySection />
+      <ContactUsSection />
     </div>
   );
 }

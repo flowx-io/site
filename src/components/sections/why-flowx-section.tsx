@@ -7,7 +7,7 @@ export const WhyFlowx = () => {
   const t = useT("why-flowx");
 
   return (
-    <section className="px-4 md:px-20 ">
+    <section className="px-4 md:px-20">
       <div className="flex justify-between items-center flex-col md:flex-row gap-8 pb-14">
         <p className="text-2xl md:text-[40px] font-bold max-w-sm md:max-w-2xl text-center md:text-right md:rtl:!text-right md:ltr:!text-left">
           {t("title")}{" "}
