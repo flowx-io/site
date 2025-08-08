@@ -53,7 +53,7 @@ export const SolutionsSection = () => {
           />
         </p>
 
-        <p className="font-bold text-center text-2xl md:text-[40px] pb-12">
+        <p className="font-bold text-center max-w-2xl text-2xl md:text-[40px] pb-12">
           {t("title").split(t("title-highlight")).map((part, index) =>
             index === 0 ? (
               <span key={index}>

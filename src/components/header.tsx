@@ -65,9 +65,11 @@ export const Header = async () => {
         <div className="flex items-center justify-between gap-4">
           <LocaleSelector className="hidden md:flex" />
           <Link href="/">
-            <Button className="rounded-full bg-[#0F6D5C] h-12 w-28 px-5 border-white text-white hover:bg-[#0F6D5C]/90 gap-2 flex items-center">
-              <GoArrowUpRight className="size-5" />
-              <span className="font-bold">{t("start-now")}</span>
+            <Button className="rounded-full bg-[#0F6D5C] h-12 px-1 border-white text-white hover:bg-[#0F6D5C]/90 gap-2 flex items-center">
+              <p className="flex items-center gap-2 px-3">
+                <span className="font-bold">{t("start-now")}</span>
+                <GoArrowUpRight className="size-5" />
+              </p>
             </Button>
           </Link>
         </div>

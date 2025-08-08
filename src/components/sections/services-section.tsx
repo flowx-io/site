@@ -1,5 +1,5 @@
 import { GoArrowUpRight } from "react-icons/go";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import Image from "next/image";
 
 export const ServicesSection = () => {

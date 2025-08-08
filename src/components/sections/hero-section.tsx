@@ -1,5 +1,5 @@
-import { Header } from "./header";
-import { Hero } from "./hero";
+import { Header } from "../header";
+import { Hero } from "../hero";
 
 export const HeroSection = () => {
   return (
