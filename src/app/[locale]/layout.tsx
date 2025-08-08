@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     siteName: "فلو إكس",
     images: [
       {
-        url: "/assets/logo.png",
+        url: "https://flowx-site.vercel.app/assets/logo.png",
         width: 1200,
         height: 630,
         alt: "فلو إكس - ثورة رقمية تغيّر طريقة إدارة المؤسسات الخيرية",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "فلو إكس - ثورة رقمية تغيّر طريقة إدارة المؤسسات الخيرية",
     description: "فلو إكس يحول إدارة المؤسسات الخيرية من التعقيد إلى البساطة، مع زيادة التبرعات بنسبة 100% خلال 6 أشهر.",
-    images: ["/assets/logo.png"],
+    images: ["https://flowx-site.vercel.app/assets/logo.png"],
     creator: "@flowx",
   },
   robots: {
