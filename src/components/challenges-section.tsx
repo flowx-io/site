@@ -7,9 +7,11 @@ import { ReactNode } from "react";
 export const ChallengesSection = () => {
 
   return (
-    <section id="solutions" className="">
+    <section
+      id="solutions"
+    >
       <div className="flex flex-col items-center justify-center">
-        <div className="px-4 md:px-8">
+        <div className="px-4 md:px-8 lg:px-20">
           <p className="flex w-fit items-center justify-center text-[10px] md:text-xs md:gap-2 gap-1 px-5 py-2 border-2 font-bold border-[#EDEDF1] rounded-full bg-[linear-gradient(99deg,rgba(255,255,255,0.80)_27.83%,rgba(255,255,255,0.80)_100%)] shadow-[0_2px_4px_0_rgba(0,0,0,0.04)] mb-4">
             <span className="text-[#1E3768] block">
               النظام الأول من نوعه لإدارة المؤسسات الخيرية في العالم العربي
@@ -33,7 +35,7 @@ export const ChallengesSection = () => {
           </p>
         </div>
 
-        <p className="font-bold text-center text-2xl md:text-[40px] pb-4 max-w-2xl px-4 md:px-8">
+        <p className="font-bold text-center text-2xl md:text-[40px] pb-4 max-w-2xl">
           نفهم
           {" "}
           <span className="text-[#43C4A2]">
@@ -43,7 +45,7 @@ export const ChallengesSection = () => {
           التي تواجهها المؤسسات الخيرية
         </p>
 
-        <p className="text-center font-medium text-base md:max-w-lg pb-12 px-4 md:px-8">
+        <p className="text-center font-medium text-base md:max-w-lg pb-12 px-4 md:px-0">
           بعد دراسة مئات المؤسسات الخيرية في العالم العربي، حددنا أهم المشاكل التي تعيق كفاءة العمل الخيري ووضعنا الحلول المناسبة
         </p>
 
@@ -110,6 +112,7 @@ export const ChallengesSection = () => {
         <div className="max-w-4xl w-full [background:linear-gradient(195deg,_#43C4A2_10.85%,_var(--Biscay-600,_#2879E8)_142.24%),_linear-gradient(0deg,_rgba(19,136,112,0.30)_-25.91%,_rgba(19,136,112,0.00)_95.25%)] md:rounded-[12px] p-6 md:p-8 flex justify-center items-center flex-col">
           <p className="text-[28px] md:text-[40px] font-bold text-center max-w-xs md:max-w-none text-white pb-2">مستعد لحل هذه التحديات؟</p>
           <p className="text-lg text-center text-white max-w-xl pb-6">انضم إلى أكثر من 500 مؤسسة خيرية في العالم العربي تستخدم فلو إكس لإدارة أعمالها بكفاءة وشفافية عالية</p>
+          
           <Button className="rounded-full  bg-[#191615] hover:bg-[#191615]/90 h-14 md:w-2xs w-full border-white text-white gap-2 flex items-center">
             <span>
               تجربة مجانية لمدة 30 يوماً

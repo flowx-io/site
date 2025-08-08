@@ -26,7 +26,10 @@ export const SolutionsSection = () => {
   };
 
   return (
-    <section id="solutions" className="px-4 md:px-8">
+    <section
+      id="solutions"
+      className="px-4 md:px-8 lg:px-20"
+    >
       <div className="flex flex-col items-center justify-center">
         <p className="flex w-fit items-center justify-center text-[10px] md:text-xs md:gap-2 gap-1 px-5 py-2 border-2 font-bold border-[#EDEDF1] rounded-full bg-[linear-gradient(99deg,rgba(255,255,255,0.80)_27.83%,rgba(255,255,255,0.80)_100%)] shadow-[0_2px_4px_0_rgba(0,0,0,0.04)] mb-4">
           <span className="text-[#1E3768] block">

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const ServicesSection = () => {
   return (
-    <section id="our-services" className="px-4 md:px-8">
+    <section id="our-services" className="px-4 md:px-20">
       <div className="grid grid-cols-3 md:gap-8 gap-4">
         {/* Card 1 */}
         <div

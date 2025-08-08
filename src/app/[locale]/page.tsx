@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/hero-section";
 import { ChallengesSection } from "@/components/challenges-section";
 import { ServicesSection } from "@/components/services-section";
 import { SolutionsSection } from "@/components/solutions.section";
+import { WhyFlowx } from "@/components/why-flowx";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <ServicesSection />
       <SolutionsSection />
       <ChallengesSection />
+      <WhyFlowx />
     </div>
   );
 }
