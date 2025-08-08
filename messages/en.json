@@ -75,5 +75,157 @@
         }
       }
     }
+  },
+  "why-flowx": {
+    "title": "Why",
+    "title-highlight": "FlowX",
+    "title-suffix": "is the best CRM for charitable organizations?",
+    "free-trial": "30-Day Free Trial",
+    "cards": {
+      "stronger-relationships": {
+        "title": "Stronger Relationships",
+        "description": "Keep donors longer through personalized communication"
+      },
+      "precise-targeting": {
+        "title": "Precise Targeting", 
+        "description": "Segment your donors by behavior and interests for more impactful messages"
+      },
+      "increased-donations": {
+        "title": "Increased Donations",
+        "description": "Clients witness an average 35% increase in donations within 6 months"
+      }
+    }
+  },
+  "challenges": {
+    "badge": "The first system of its kind for managing charitable organizations in the Arab world",
+    "title": "We understand the",
+    "title-highlight": "challenges",
+    "title-suffix": "facing charitable organizations",
+    "description": "After studying hundreds of charitable organizations in the Arab world, we identified the main problems hindering charitable work efficiency and developed appropriate solutions",
+    "common-problems": {
+      "title": "Common Problems",
+      "description": "Challenges faced by most organizations",
+      "features": {
+        "complex-management": {
+          "title": "Complex and scattered management",
+          "description": "Using multiple separate systems to manage staff, donations, and finances creates complexity and errors"
+        },
+        "paper-excel-dependency": {
+          "title": "Reliance on papers and Excel",
+          "description": "Manual data tracking leads to errors and difficulty in generating reports and follow-up"
+        },
+        "lack-transparency": {
+          "title": "Lack of transparency",
+          "description": "Difficulty in tracking donations and monitoring spending affects donor trust"
+        },
+        "slow-operations": {
+          "title": "Slow operations",
+          "description": "Long and complex procedures drain team time and delay charitable project implementation"
+        }
+      }
+    },
+    "advanced-solutions": {
+      "title": "Our Advanced Solutions",
+      "description": "Solutions that address the challenges most organizations face",
+      "features": {
+        "unified-system": {
+          "title": "Unified and integrated system",
+          "description": "One platform that brings together all operations from staff management to donations and reports"
+        },
+        "complete-digitization": {
+          "title": "Complete digitization",
+          "description": "Converting all paper processes to a secure digital system with automatic backups"
+        },
+        "full-transparency": {
+          "title": "Full transparency",
+          "description": "Real-time tracking of all donations and expenses with detailed reports for donors"
+        },
+        "speed-efficiency": {
+          "title": "Speed and efficiency",
+          "description": "Process automation and procedure simplification to save time and focus on charitable work"
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to solve these challenges?",
+      "description": "Join over 500 charitable organizations in the Arab world using FlowX to manage their operations with high efficiency and transparency",
+      "button": "30-Day Free Trial"
+    }
+  },
+  "features": {
+    "free-trial": "30-Day Free Trial",
+    "sections": {
+      "crm-system": {
+        "title": "FlowX - Comprehensive",
+        "title-highlight": "CRM System",
+        "title-suffix": "for Donor Management",
+        "description": "More than just a donation system - FlowX is a comprehensive CRM system that helps you build and manage strong relationships with donors to ensure continued support",
+        "features": {
+          "comprehensive-database": {
+            "title": "Comprehensive Database",
+            "description": "Keep all donor data in one place with complete history of donations and interactions"
+          },
+          "relationship-management": {
+            "title": "Relationship Management",
+            "description": "Build strong relationships with donors by tracking interactions and important occasions"
+          },
+          "smart-notifications": {
+            "title": "Smart Notifications",
+            "description": "Get alerts when a donor stops donating or on important occasions"
+          },
+          "activity-tracking": {
+            "title": "Activity Tracking",
+            "description": "Monitor donor activity on the website and engagement with campaigns and messages"
+          }
+        }
+      },
+      "dashboard": {
+        "title": "Comprehensive Dashboard for",
+        "title-highlight": "Effective Targeting",
+        "title-suffix": "for managing donations and subscriptions.",
+        "description": "Track all your donations and monthly subscriptions, download receipts and reports, and monitor the impact of your contributions with ease.",
+        "features": {
+          "subscription-management": {
+            "title": "Monthly Subscription Management",
+            "description": "Track, renew, and cancel your monthly subscriptions easily at any time."
+          },
+          "impact-tracking": {
+            "title": "Track Donation Impact on Projects",
+            "description": "Discover the real impact of your contributions through documented reports and data on project status."
+          },
+          "receipt-download": {
+            "title": "Download Receipts and Tax Reports",
+            "description": "Download your donation receipts and keep them easily for whenever you need them."
+          },
+          "donation-history": {
+            "title": "View Donation and Contribution History",
+            "description": "Track your donation and contribution record with details of amounts and projects you supported over time."
+          }
+        }
+      },
+      "analytics": {
+        "title": "Smart Insights for",
+        "title-highlight": "Effective Retargeting",
+        "description": "Get deep analytics and detailed statistics that help you understand donor behavior and intelligently retarget them to increase donations",
+        "features": {
+          "advanced-statistics": {
+            "title": "Advanced Statistics",
+            "description": "Deep analytics of donor behavior and donation patterns"
+          },
+          "smart-retargeting": {
+            "title": "Smart Retargeting",
+            "description": "Target the right donors with the right messages at the right time"
+          },
+          "behavior-prediction": {
+            "title": "Donor Behavior Prediction",
+            "description": "Use artificial intelligence to predict who might donate and when"
+          },
+          "custom-reports": {
+            "title": "Customizable Reports",
+            "description": "Create custom reports to track the metrics that matter to you"
+          }
+        }
+      }
+    }
   }
 }

@@ -3,8 +3,10 @@ import { cn } from "@/lib/utils";
 import { GoArrowUpRight } from "react-icons/go";
 import Image from "next/image";
 import { ReactNode } from "react";
+import { useT } from "@/hooks/useNextIntl";
 
 export const ChallengesSection = () => {
+  const t = useT("challenges");
 
   return (
     <section
@@ -14,7 +16,7 @@ export const ChallengesSection = () => {
         <div className="px-4 md:px-8 lg:px-20">
           <p className="flex w-fit items-center justify-center text-[10px] md:text-xs md:gap-2 gap-1 px-5 py-2 border-2 font-bold border-[#EDEDF1] rounded-full bg-[linear-gradient(99deg,rgba(255,255,255,0.80)_27.83%,rgba(255,255,255,0.80)_100%)] shadow-[0_2px_4px_0_rgba(0,0,0,0.04)] mb-4">
             <span className="text-[#1E3768] block">
-              النظام الأول من نوعه لإدارة المؤسسات الخيرية في العالم العربي
+              {t("badge")}
             </span>
 
             <Image
@@ -36,45 +38,45 @@ export const ChallengesSection = () => {
         </div>
 
         <p className="font-bold text-center text-2xl md:text-[40px] pb-4 max-w-2xl">
-          نفهم
+          {t("title")}
           {" "}
           <span className="text-[#43C4A2]">
-            التحديات
+            {t("title-highlight")}
           </span>
           {" "}
-          التي تواجهها المؤسسات الخيرية
+          {t("title-suffix")}
         </p>
 
         <p className="text-center font-medium text-base md:max-w-lg pb-12 px-4 md:px-0">
-          بعد دراسة مئات المؤسسات الخيرية في العالم العربي، حددنا أهم المشاكل التي تعيق كفاءة العمل الخيري ووضعنا الحلول المناسبة
+          {t("description")}
         </p>
 
         <div className="max-w-4xl flex gap-8 w-full flex-col md:flex-row pb-12 px-4 md:px-0">
           <ChallengeCard
             className="border-[#EDEDF1] [background:linear-gradient(175deg,var(--tags-eror-bg,#FEF2F2)_0.84%,#FFF_18.4%)] border-[1.5px] [box-shadow:0_4px_8px_8px_rgba(0,0,0,0.02)]"
             icon={<ChallengeIcon />}
-            title="المشاكل الشائعة"
-            description="التحديات التي تواجهها معظم المؤسسات"
+            title={t("common-problems.title")}
+            description={t("common-problems.description")}
             features={[
               {
-                title: " إدارة معقدة ومتناثرة",
+                title: t("common-problems.features.complex-management.title"),
                 icon: "/icons/alert-circle.svg",
-                description: "استخدام أنظمة متعددة منفصلة لإدارة الموظفين والتبرعات والمالية مما يخلق تعقيداً وأخطاء"
+                description: t("common-problems.features.complex-management.description")
               },
               {
-                title: " اعتماد على الأوراق والإكسل",
+                title: t("common-problems.features.paper-excel-dependency.title"),
                 icon: "/icons/files.svg",
-                description: "تبع البيانات يدوياً يؤدي إلى أخطاء وصعوبة في إنتاج التقارير والمتابعة"
+                description: t("common-problems.features.paper-excel-dependency.description")
               },
               {
-                title: " نقص في الشفافية",
+                title: t("common-problems.features.lack-transparency.title"),
                 icon: "/icons/view-off-slash.svg",
-                description: "صعوبة في تتبع التبرعات ومراقبة الإنفاق مما يؤثر على ثقة المتبرعين"
+                description: t("common-problems.features.lack-transparency.description")
               },
               {
-                title: " بطء في العمليات",
+                title: t("common-problems.features.slow-operations.title"),
                 icon: "/icons/loading.svg",
-                description: "إجراءات طويلة ومعقدة تستنزف وقت الفريق وتؤخر تنفيذ المشاريع الخيرية"
+                description: t("common-problems.features.slow-operations.description")
               },
             ]}
           />
@@ -82,40 +84,40 @@ export const ChallengesSection = () => {
           <ChallengeCard
             className="border-[1.5px] border-[#0F6D5C]  [background:linear-gradient(159deg,var(--Bermuda-50,#EEFBF6)_17.47%,#FFF_73.27%)] [box-shadow:0_2.108px_4.216px_0_rgba(0,0,0,0.02)]"
             icon={<SolutionIcon />}
-            title="حلولنا المتقدمة"
-            description="التحديات التي تواجهها معظم المؤسسات"
+            title={t("advanced-solutions.title")}
+            description={t("advanced-solutions.description")}
             features={[
               {
-                title: " نظام موحد ومتكامل",
+                title: t("advanced-solutions.features.unified-system.title"),
                 icon: "/icons/security-check.svg",
-                description: "منصة واحدة تجمع جميع العمليات من إدارة الموظفين إلى التبرعات والتقارير"
+                description: t("advanced-solutions.features.unified-system.description")
               },
               {
-                title: " رقمنة كاملة",
+                title: t("advanced-solutions.features.complete-digitization.title"),
                 icon: "/icons/database.svg",
-                description: "تحويل جميع العمليات الورقية إلى نظام رقمي آمن مع نسخ احتياطية تلقائية"
+                description: t("advanced-solutions.features.complete-digitization.description")
               },
               {
-                title: " شفافية كاملة",
+                title: t("advanced-solutions.features.full-transparency.title"),
                 icon: "/icons/chart-up.svg",
-                description: "تتبع فوري لجميع التبرعات والمصروفات مع تقارير تفصيلية للمتبرعين"
+                description: t("advanced-solutions.features.full-transparency.description")
               },
               {
-                title: " سرعة وكفاءة",
+                title: t("advanced-solutions.features.speed-efficiency.title"),
                 icon: "/icons/zap.svg",
-                description: "أتمتة العمليات وتبسيط الإجراءات لتوفير الوقت والتركيز على العمل الخيري"
+                description: t("advanced-solutions.features.speed-efficiency.description")
               },
             ]}
           />
         </div>
 
         <div className="max-w-4xl w-full [background:linear-gradient(195deg,_#43C4A2_10.85%,_var(--Biscay-600,_#2879E8)_142.24%),_linear-gradient(0deg,_rgba(19,136,112,0.30)_-25.91%,_rgba(19,136,112,0.00)_95.25%)] md:rounded-[12px] p-6 md:p-8 flex justify-center items-center flex-col">
-          <p className="text-[28px] md:text-[40px] font-bold text-center max-w-xs md:max-w-none text-white pb-2">مستعد لحل هذه التحديات؟</p>
-          <p className="text-lg text-center text-white max-w-xl pb-6">انضم إلى أكثر من 500 مؤسسة خيرية في العالم العربي تستخدم فلو إكس لإدارة أعمالها بكفاءة وشفافية عالية</p>
+          <p className="text-[28px] md:text-[40px] font-bold text-center max-w-xs md:max-w-none text-white pb-2">{t("cta.title")}</p>
+          <p className="text-lg text-center text-white max-w-xl pb-6">{t("cta.description")}</p>
           
           <Button className="rounded-full  bg-[#191615] hover:bg-[#191615]/90 h-14 md:w-2xs w-full border-white text-white gap-2 flex items-center">
             <span>
-              تجربة مجانية لمدة 30 يوماً
+              {t("cta.button")}
             </span>
             <GoArrowUpRight className="size-5" />
           </Button>
