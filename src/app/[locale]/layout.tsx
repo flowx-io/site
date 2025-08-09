@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { Cairo } from "next/font/google";
 import { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
+import { Cairo } from "next/font/google";
 
 import { routing } from "@/i18n/routing";
 import "./globals.css";
 
 const cairo = Cairo({
   variable: "--font-cairo",
-  subsets: ["arabic"],
   weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin", "arabic"],
 });
 
 export const metadata: Metadata = {
@@ -107,8 +107,9 @@ export default async function RootLayout({
     <html
       lang={locale}
       dir={locale === 'ar' ? 'rtl' : 'ltr'}
+      className={cairo.variable}
     >
-      <body className={(cairo.className, "bg-white antialiased")}>
+      <body className="font-cairo bg-white antialiased">
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
