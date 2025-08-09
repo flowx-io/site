@@ -213,7 +213,7 @@ export const FeaturesSection = () => {
             </div>
 
             <Button className="flex rounded-full bg-[#138870] hover:bg-[#138870]/90 h-14 md:w-2xs w-full border-white text-white gap-2 items-center mt-4">
-              <span className="[text-shadow:0_2px_4px_rgba(0,0,0,0.50)]">
+              <span>
                 {t('free-trial')}
               </span>
 

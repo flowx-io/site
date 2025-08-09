@@ -277,5 +277,28 @@
       "character-count": "characters",
       "submit": "30-Day Free Trial"
     }
+  },
+  "footer": {
+    "description": "The leading system for managing charitable organizations in the Arab world. We turn challenges into sustainable growth opportunities.",
+    "free-trial": "30-Day Free Trial",
+    "important-links": {
+      "title": "Important Links",
+      "success-stories": "Success Stories",
+      "blog": "Blog",
+      "contact-us": "Contact Us"
+    },
+    "support": {
+      "title": "Support",
+      "help-center": "Help Center",
+      "technical-support": "Technical Support",
+      "privacy-policy": "Privacy Policy",
+      "terms-of-use": "Terms of Use"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "question": "Have a question? Call us at",
+      "phone": "+966 11 500 7890"
+    },
+    "copyright": "© 2025 FlowX - The leading system for managing charitable organizations in the Arab world. All rights reserved."
   }
 }

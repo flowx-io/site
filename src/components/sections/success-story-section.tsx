@@ -43,7 +43,7 @@ export const SuccessStorySection = () => {
           </div>
 
           <p className="text-lg text-center max-w-3xl">
-            "{t("testimonial")}"
+            &ldquo;{t("testimonial")}&rdquo;
           </p>
 
           <div className="px-0 md:px-8 py-6 md:py-8 grid gap-x-14 md:gap-0 gap-y-9 grid-cols-2 md:flex justify-between w-full">

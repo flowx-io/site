@@ -54,14 +54,14 @@ export const ContactUsForm = () => {
   };
 
   return (
-    <div className="flex flex-1 border-[10px] rounded-2xl border-white/10 overflow-hidden">
+    <div className="flex flex-1 border-[10px] rounded-2xl border-white/10 overflow-hidden max-w-[620px] w-full">
       <form
         className="bg-white w-full h-full p-8 flex flex-col gap-6"
         onSubmit={handleSubmit}
       >
         <div>
-          <p className="text-2xl font-bold">{t("title")}</p>
-          <p className="text-lg font-medium">{t("subtitle")}</p>
+          <p className="text-lg md:text-2xl font-bold">{t("title")}</p>
+          <p className="text-base md:text-lg font-medium">{t("subtitle")}</p>
         </div>
 
         <div className="flex flex-col gap-4">
