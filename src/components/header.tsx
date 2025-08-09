@@ -35,16 +35,17 @@ export const Header = async () => {
           <Image
             src="/assets/logo.svg"
             alt="Logo"
-            className="hidden md:block"
+            className="hidden lg:block"
             width={100}
             height={24}
           />
+
           <Image
             src="/assets/icon.svg"
             alt="Logo"
-            className="block md:hidden px-3"
-            width={32}
-            height={32}
+            className="block lg:hidden"
+            width={30}
+            height={30}
           />
         </div>
 
@@ -55,7 +56,7 @@ export const Header = async () => {
             <Link
               href={link.href}
               key={link.label}
-              className={cn("text-[#191615]", i === 0 && "font-bold")}
+              className={cn("text-[#191615] whitespace-nowrap", i === 0 && "font-bold")}
             >
               {link.label}
             </Link>
@@ -67,8 +68,10 @@ export const Header = async () => {
           <Link href="/">
             <Button className="rounded-full bg-[#0F6D5C] h-12 px-1 border-white text-white hover:bg-[#0F6D5C]/90 gap-2 flex items-center">
               <p className="flex items-center gap-2 px-3">
-                <span className="font-bold">{t("start-now")}</span>
-                <GoArrowUpRight className="size-5" />
+                <span className="font-bold whitespace-nowrap flex items-center gap-2">
+                  {t("start-now")}
+                  <GoArrowUpRight className="size-5" />
+                </span>
               </p>
             </Button>
           </Link>

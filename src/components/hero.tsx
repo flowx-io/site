@@ -2,86 +2,120 @@ import Image from "next/image";
 
 import { Button } from "./ui/button";
 import { useT } from "@/hooks/useNextIntl";
+import { Badge } from "./badge";
 
 export const Hero = () => {
   const t = useT("hero");
 
   return (
-    <div className="flex flex-col gap-4 justify-center items-center h-full pt-20 px-2 md:px-0 pb-5">
-      <p className="flex items-center text-[10px] md:text-xs md:gap-2 gap-1 px-5 py-2 border-2 font-bold border-[#EDEDF1] rounded-full bg-[linear-gradient(99deg,rgba(255,255,255,0.80)_27.83%,rgba(255,255,255,0.80)_100%)] shadow-[0_2px_4px_0_rgba(0,0,0,0.04)]">
-        <span className="text-[#1E3768] block">
-          {t("badge")}
-        </span>
+    <div className="flex h-full flex-col items-center justify-center gap-4 px-2 pt-20 pb-5 md:px-0">
+      <Badge text={t("badge")} />
 
-        <Image
-          src="/icons/award.svg"
-          alt="logo"
-          width={24}
-          height={24}
-          className="hidden md:block"
-        />
-
-        <Image
-          src="/icons/award.svg"
-          alt="logo"
-          width={20}
-          height={20}
-          className="block md:hidden"
-        />
-      </p>
-
-      <p className="text-center md:text-5xl text-[32px] font-bold max-w-5xl leading-tight pb-4">
-        <span className="bg-linear-202 from-emerald-400 to-blue-600 text-transparent bg-clip-text">
+      <p className="max-w-5xl pb-4 text-center text-[32px] leading-tight font-bold md:text-5xl">
+        <span className="bg-linear-202 from-emerald-400 to-blue-600 bg-clip-text text-transparent">
           {t("title-highlight")}
         </span>
         <span> {t("title-text")} </span>
       </p>
 
-      <p className="text-center font-medium text-base md:max-w-2xl">
+      <p className="text-center text-base font-medium md:max-w-2xl">
         {t("description")}
       </p>
 
-      <div className="flex items-center flex-col-reverse md:flex-row gap-4 pb-4 w-full justify-center">
-        <Button className="px-8 py-4 w-full md:w-fit rounded-full h-auto bg-transparent gap-2 border border-[#DEE4E7] hover:bg-[#DEE4E7]/50 shadow-[0_2px_4px_0_rgba(0,0,0,0.04)]">
-          <Image src="/icons/computer-video.svg" alt="arrow" width={24} height={24} />
-          <span className="text-[#24252D] font-bold">{t("watch-how")}</span>
+      <div className="flex w-full flex-col-reverse items-center justify-center gap-4 pb-4 md:flex-row">
+        <Button className="h-auto w-full gap-2 rounded-full bg-[#138870] px-8 py-4 hover:bg-[#138870]/90 md:w-fit">
+          <Image src="/icons/rocket.svg" alt="arrow" width={24} height={24} />
+          <span className="font-bold text-white">{t("free-trial")} </span>
         </Button>
 
-        <Button className="px-8 w-full md:w-fit py-4 bg-[#138870] rounded-full h-auto gap-2 hover:bg-[#138870]/90">
-          <Image src="/icons/rocket.svg" alt="arrow" width={24} height={24} />
-          <span className="text-white font-bold">{t("free-trial")} </span>
+        <Button className="h-auto w-full gap-2 rounded-full border border-[#DEE4E7] bg-transparent px-8 py-4 shadow-[0_2px_4px_0_rgba(0,0,0,0.04)] hover:bg-[#DEE4E7]/50 md:w-fit">
+          <Image
+            src="/icons/computer-video.svg"
+            alt="arrow"
+            width={24}
+            height={24}
+          />
+          <span className="font-bold text-[#24252D]">{t("watch-how")}</span>
         </Button>
       </div>
 
-      <div className="flex items-center gap-4 pb-20">
-        <div className="flex items-center flex-col gap-2 p-3">
-          <Image src="/icons/internet.svg" className="block md:hidden" alt="logo" width={24} height={24} />
-          <Image src="/icons/internet.svg" className="hidden md:block" alt="logo" width={32} height={32} />
-          <span className="text-[10px] md:text-xs font-bold text-[#0A0A0A]">
+      <div className="flex items-center gap-4 md:pb-20">
+        <div className="flex flex-col items-center gap-2 p-1 sm:p-3">
+          <Image
+            src="/icons/internet.svg"
+            className="block md:hidden"
+            alt="logo"
+            width={24}
+            height={24}
+          />
+          <Image
+            src="/icons/internet.svg"
+            className="hidden md:block"
+            alt="logo"
+            width={32}
+            height={32}
+          />
+          <span className="text-center text-[10px] font-bold text-[#0A0A0A] md:text-xs">
             {t("features.comprehensive-coverage")}
           </span>
         </div>
 
-        <div className="flex items-center flex-col gap-2 p-3">
-          <Image src="/icons/user-add.svg" className="block md:hidden" alt="logo" width={24} height={24} />
-          <Image src="/icons/user-add.svg" className="hidden md:block" alt="logo" width={32} height={32} />
-          <span className="text-[10px] md:text-xs font-bold text-[#0A0A0A]">
+        <div className="flex flex-col items-center gap-2 p-1 sm:p-3">
+          <Image
+            src="/icons/user-add.svg"
+            className="block md:hidden"
+            alt="logo"
+            width={24}
+            height={24}
+          />
+          <Image
+            src="/icons/user-add.svg"
+            className="hidden md:block"
+            alt="logo"
+            width={32}
+            height={32}
+          />
+          <span className="text-center text-[10px] font-bold text-[#0A0A0A] md:text-xs">
             {t("features.advanced-management")}
           </span>
         </div>
 
-        <div className="flex items-center flex-col gap-2 p-3">
-          <Image src="/icons/security-check.svg" className="block md:hidden" alt="logo" width={24} height={24} />
-          <Image src="/icons/security-check.svg" className="hidden md:block" alt="logo" width={32} height={32} />
-          <span className="text-[10px] md:text-xs font-bold text-[#0A0A0A]">
+        <div className="flex flex-col items-center gap-2 p-1 sm:p-3">
+          <Image
+            src="/icons/security-check.svg"
+            className="block md:hidden"
+            alt="logo"
+            width={24}
+            height={24}
+          />
+          <Image
+            src="/icons/security-check.svg"
+            className="hidden md:block"
+            alt="logo"
+            width={32}
+            height={32}
+          />
+          <span className="text-center text-[10px] font-bold text-[#0A0A0A] md:text-xs">
             {t("features.absolute-security")}
           </span>
         </div>
 
-        <div className="flex items-center flex-col gap-2 p-3">
-          <Image src="/icons/chart-up.svg" className="block md:hidden" alt="logo" width={24} height={24} />
-          <Image src="/icons/chart-up.svg" className="hidden md:block" alt="logo" width={32} height={32} />
-          <span className="text-[10px] md:text-xs font-bold text-[#0A0A0A]">
+        <div className="flex flex-col items-center gap-2 p-1 sm:p-3">
+          <Image
+            src="/icons/chart-up.svg"
+            className="block md:hidden"
+            alt="logo"
+            width={24}
+            height={24}
+          />
+          <Image
+            src="/icons/chart-up.svg"
+            className="hidden md:block"
+            alt="logo"
+            width={32}
+            height={32}
+          />
+          <span className="text-center text-[10px] font-bold text-[#0A0A0A] md:text-xs">
             {t("features.exceptional-growth")}
           </span>
         </div>
@@ -92,8 +126,8 @@ export const Hero = () => {
         alt="stats-cards"
         width={1000}
         height={1000}
-        className="w-full h-full object-cover max-w-5xl hidden md:block"
+        className="hidden h-full w-full max-w-5xl object-cover md:block"
       />
     </div>
-  )
-}
+  );
+};

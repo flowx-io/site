@@ -43,7 +43,7 @@ export const Footer = () => {
         <div className="flex flex-col lg:flex-row gap-8">
           {/* First two columns: Important Links & Support */}
           <div className="flex flex-row gap-8 w-full lg:w-auto">
-            <div className="w-1/2 min-w-[11rem] max-w-[11rem] lg:w-44">
+            <div className="w-1/2 w-full max-w-[11rem] lg:w-44">
               <p className="text-lg font-bold text-black pb-3">{t("important-links.title")}</p>
               <ul className="flex flex-col gap-2">
                 <li>
@@ -57,7 +57,8 @@ export const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="w-1/2 min-w-[11rem] max-w-[11rem] lg:w-44">
+
+            <div className="w-1/2 w-full max-w-[11rem] lg:w-44">
               <p className="text-lg font-bold text-black pb-3">{t("support.title")}</p>
               <ul className="flex flex-col gap-2">
                 <li>

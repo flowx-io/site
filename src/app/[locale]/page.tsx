@@ -10,7 +10,7 @@ import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
-    <div className="space-y-20">
+    <div className="space-y-8 md:space-y-20">
       <HeroSection />
       {/* <ServicesSection /> */}
       <SolutionsSection />
