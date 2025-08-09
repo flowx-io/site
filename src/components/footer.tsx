@@ -47,13 +47,13 @@ export const Footer = () => {
               <p className="text-lg font-bold text-black pb-3">{t("important-links.title")}</p>
               <ul className="flex flex-col gap-2">
                 <li>
-                  <Link href="/">{t("important-links.success-stories")}</Link>
+                  <Link href="#">{t("important-links.success-stories")}</Link>
                 </li>
                 <li>
-                  <Link href="/">{t("important-links.blog")}</Link>
+                  <Link href="#">{t("important-links.blog")}</Link>
                 </li>
                 <li>
-                  <Link href="/">{t("important-links.contact-us")}</Link>
+                  <Link href="#">{t("important-links.contact-us")}</Link>
                 </li>
               </ul>
             </div>
@@ -61,16 +61,16 @@ export const Footer = () => {
               <p className="text-lg font-bold text-black pb-3">{t("support.title")}</p>
               <ul className="flex flex-col gap-2">
                 <li>
-                  <Link href="/">{t("support.help-center")}</Link>
+                  <Link href="#">{t("support.help-center")}</Link>
                 </li>
                 <li>
-                  <Link href="/">{t("support.technical-support")}</Link>
+                  <Link href="#">{t("support.technical-support")}</Link>
                 </li>
                 <li>
-                  <Link href="/">{t("support.privacy-policy")}</Link>
+                  <Link href="#">{t("support.privacy-policy")}</Link>
                 </li>
                 <li>
-                  <Link href="/">{t("support.terms-of-use")}</Link>
+                  <Link href="#">{t("support.terms-of-use")}</Link>
                 </li>
               </ul>
             </div>
@@ -97,7 +97,7 @@ export const Footer = () => {
             </div>
             <div className="flex flex-row gap-2">
               <a
-                href="/"
+                href="#"
                 className="size-8 border-2 border-white/60 bg-[linear-gradient(99deg,rgba(255,255,255,0.80)_27.83%,rgba(255,255,255,0.20)_101%)] shadow-[0_2px_8px_0_rgba(0,0,0,0.04)] rounded-full flex justify-center items-center"
               >
                 <Image
@@ -108,7 +108,7 @@ export const Footer = () => {
                 />
               </a>
               <a
-                href="/"
+                href="#"
                 className="size-8 border-2 border-white/60 bg-[linear-gradient(99deg,rgba(255,255,255,0.80)_27.83%,rgba(255,255,255,0.20)_101%)] shadow-[0_2px_8px_0_rgba(0,0,0,0.04)] rounded-full flex justify-center items-center"
               >
                 <Image
@@ -119,7 +119,7 @@ export const Footer = () => {
                 />
               </a>
               <a
-                href="/"
+                href="#"
                 className="size-8 border-2 border-white/60 bg-[linear-gradient(99deg,rgba(255,255,255,0.80)_27.83%,rgba(255,255,255,0.20)_101%)] shadow-[0_2px_8px_0_rgba(0,0,0,0.04)] rounded-full flex justify-center items-center"
               >
                 <Image
@@ -130,7 +130,7 @@ export const Footer = () => {
                 />
               </a>
               <a
-                href="/"
+                href="#"
                 className="size-8 border-2 border-white/60 bg-[linear-gradient(99deg,rgba(255,255,255,0.80)_27.83%,rgba(255,255,255,0.20)_101%)] shadow-[0_2px_8px_0_rgba(0,0,0,0.04)] rounded-full flex justify-center items-center"
               >
                 <Image

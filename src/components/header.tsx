@@ -16,7 +16,7 @@ export const Header = async () => {
     },
     {
       label: t("services"),
-      href: "#our-services",
+      href: "#features",
     },
     {
       label: t("solutions"),

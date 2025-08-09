@@ -190,7 +190,7 @@ export const ContactUsForm = () => {
   );
 };
 
-const PhoneInput = ({ className, ...props }: React.ComponentProps<"input">) => {
+const PhoneInput = ({ ...props }: React.ComponentProps<"input">) => {
   const lang = useLocale()
 
   return (
