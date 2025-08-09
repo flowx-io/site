@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+
 import { sendEmail } from "@/utils/send-email";
 import { createContactEmailTemplate } from "@/utils/email-template";
 
@@ -12,7 +13,6 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Create email template
     const emailTemplate = createContactEmailTemplate({
       name,
       email,
@@ -21,7 +21,6 @@ export async function POST(request: NextRequest) {
       message,
     });
 
-    // Send email
     await sendEmail({
       subject: emailTemplate.subject,
       html: emailTemplate.html,
@@ -30,8 +29,8 @@ export async function POST(request: NextRequest) {
 
     console.log("Contact form submitted successfully:", { name, email, company, phone });
 
-    return NextResponse.json({ 
-      message: "تم إرسال الرسالة بنجاح" 
+    return NextResponse.json({
+      message: "تم إرسال الرسالة بنجاح"
     });
   } catch (error) {
     console.error("Error processing contact form:", error);

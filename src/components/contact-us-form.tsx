@@ -130,7 +130,7 @@ export const ContactUsForm = () => {
             </Label>
             <div dir="ltr">
               <RPNInput.default
-                className="flex rounded-md shadow-xs w-full"
+                className="flex shadow-xs w-full"
                 international
                 flagComponent={FlagComponent}
                 countrySelectComponent={CountrySelect}
@@ -197,7 +197,7 @@ const PhoneInput = ({ className, ...props }: React.ComponentProps<"input">) => {
     <Input
       data-slot="phone-input"
       className={cn(
-        "-ms-px shadow-none focus-visible:z-10",
+        "-ms-px shadow-none focus-visible:z-10 rounded-md",
         lang === "ar" ? "rounded-e-none" : "rounded-s-none",
       )}
       {...props}
@@ -228,7 +228,7 @@ const CountrySelect = ({
   return (
     <div
       className={cn(
-        "border-input bg-background text-muted-foreground focus-within:border-ring focus-within:ring-ring/50 hover:bg-accent hover:text-foreground has-aria-invalid:border-destructive/60 has-aria-invalid:ring-destructive/20 dark:has-aria-invalid:ring-destructive/40 relative inline-flex items-center self-stretch border py-2 ps-3 pe-2 transition-[color,box-shadow] outline-none focus-within:z-10 focus-within:ring-[3px] has-disabled:pointer-events-none has-disabled:opacity-50",
+        "border-input rounded-md bg-background text-muted-foreground focus-within:border-ring focus-within:ring-ring/50 hover:bg-accent hover:text-foreground has-aria-invalid:border-destructive/60 has-aria-invalid:ring-destructive/20 dark:has-aria-invalid:ring-destructive/40 relative inline-flex items-center self-stretch border py-2 ps-3 pe-2 transition-[color,box-shadow] outline-none focus-within:z-10 focus-within:ring-[3px] has-disabled:pointer-events-none has-disabled:opacity-50",
         lang === "ar" ? "rounded-s-none" : "rounded-e-none",
       )}
     >
@@ -267,7 +267,7 @@ const FlagComponent = ({ country, countryName }: RPNInput.FlagProps) => {
   const Flag = flags[country];
 
   return (
-    <span className="w-5 overflow-hidden rounded-sm">
+    <span className="w-5 overflow-hidden">
       {Flag ? (
         <Flag title={countryName} />
       ) : (
