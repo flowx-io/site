@@ -14,6 +14,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
+import { BiBorderRadius } from "react-icons/bi";
 
 export const ContactUsForm = () => {
   const t = useTranslations("contact.form");
@@ -130,7 +131,7 @@ export const ContactUsForm = () => {
             </Label>
             <div dir="ltr">
               <RPNInput.default
-                className="flex shadow-xs w-full"
+                className="flex w-full"
                 international
                 flagComponent={FlagComponent}
                 countrySelectComponent={CountrySelect}
@@ -192,15 +193,23 @@ export const ContactUsForm = () => {
 
 const PhoneInput = ({ ...props }: React.ComponentProps<"input">) => {
   const lang = useLocale()
+  console.log("lang", lang)
 
   return (
     <Input
       data-slot="phone-input"
-      className={cn(
-        "-ms-px shadow-none focus-visible:z-10 rounded-md",
-        lang === "ar" ? "rounded-e-none" : "rounded-s-none",
-      )}
       {...props}
+      className={cn(
+        props.className,
+        // "!rounded-none",
+      )}
+      style={{
+        ...props.style,
+        borderTopLeftRadius: lang === "ar" ? "0px" : "8px",
+        borderTopRightRadius: lang === "ar" ? "8px" : "0px",
+        borderBottomLeftRadius: lang === "ar" ? "0px" : "8px",
+        borderBottomRightRadius: lang === "ar" ? "8px" : "0px",
+      }}
     />
   )
 }

@@ -9,7 +9,7 @@ export const ContactUsSection = async () => {
   return (
     <section
       id="contact"
-      className="[background:var(--1,_linear-gradient(180deg,_var(--Bermuda-700,_#0F6D5C)_6.43%,_var(--Bermuda-500,_#20A98A)_99.9%))] px-6 md:px-20 py-8 md:py-14 flex mx-auto flex-col md:flex-row gap-8 md:gap-14 items-center"
+      className="[background:var(--1,_linear-gradient(180deg,_var(--Bermuda-700,_#0F6D5C)_6.43%,_var(--Bermuda-500,_#20A98A)_99.9%))] px-6 md:px-20 py-8 md:py-14 flex mx-auto flex-col lg:flex-row gap-8 md:gap-14 items-center"
     >
       <div className="flex flex-1 flex-col gap-8 md:gap-10">
         <div className="flex flex-col gap-4 text-white">

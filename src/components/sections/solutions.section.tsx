@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { GoArrowUpRight } from "react-icons/go";
 import { useT } from "@/hooks/useNextIntl";
 import { useLocale } from "next-intl";
@@ -58,21 +57,25 @@ export const SolutionsSection = () => {
             />
           </div>
 
-          <div className="flex flex-col gap-8 md:flex-row">
-            <SolutionCard
-              title={t("cards.donor-experience.title")}
-              list={getFeatures("donor-experience")}
-            />
-
-            <SolutionCard
-              title={t("cards.email-marketing.title")}
-              list={getFeatures("email-marketing")}
-            />
-
-            <SolutionCard
-              title={t("cards.flexible-identity-settings.title")}
-              list={getFeatures("flexible-identity-settings")}
-            />
+          <div className="flex flex-col gap-8 md:grid md:grid-cols-2 lg:flex lg:flex-row">
+            <div className="flex-1">
+              <SolutionCard
+                title={t("cards.donor-experience.title")}
+                list={getFeatures("donor-experience")}
+              />
+            </div>
+            <div className="flex-1">
+              <SolutionCard
+                title={t("cards.email-marketing.title")}
+                list={getFeatures("email-marketing")}
+              />
+            </div>
+            <div className="flex-1 md:col-span-2 lg:col-span-1">
+              <SolutionCard
+                title={t("cards.flexible-identity-settings.title")}
+                list={getFeatures("flexible-identity-settings")}
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -84,7 +87,7 @@ const SolutionCard = ({ title, list }: { title: string; list: string[] }) => {
   const lang = useLocale();
 
   return (
-    <div className="flex flex-1 flex-col rounded-[12px] border border-[#F2F2F2] shadow-[0_4px_24px_0_rgba(67,196,162,0.10)]">
+    <div className="flex flex-1 flex-col h-full rounded-[12px] border border-[#F2F2F2] shadow-[0_4px_24px_0_rgba(67,196,162,0.10)]">
       <div className="flex w-full flex-row items-center justify-between bg-[rgba(67,196,162,0.06)] px-6 py-4 md:px-8 md:py-5">
         <p className="text-base font-bold text-[#0A0A0A] md:text-lg">{title}</p>
         <div className="flex size-7 items-center justify-center rounded-full bg-[#191615] md:size-8">

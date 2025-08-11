@@ -4,28 +4,28 @@ import { useTranslations } from "next-intl";
 
 export const FeaturesSection = () => {
   const t = useTranslations('features');
-  
+
   return (
     <section
       id="features"
       className="px-4 md:px-8 lg:px-20"
     >
       <div className="flex flex-col items-center justify-center gap-14">
-        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 w-full">
+        <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 w-full">
           <div className="flex-1">
             <Image
               src="/assets/system.png"
               alt="Features"
-              width={624}
-              height={624}
+              width={800}
+              height={800}
               className="w-full h-full object-cover mx-auto hidden md:block"
             />
 
             <Image
               src="/assets/system.png"
               alt="Features"
-              width={340}
-              height={340}
+              width={500}
+              height={500}
               className="w-full h-full object-cover mx-auto block md:hidden"
             />
           </div>
@@ -82,7 +82,7 @@ export const FeaturesSection = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 w-full">
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-6 lg:gap-8 w-full">
           <div className="flex-1 flex flex-col md:gap-8 gap-6">
             <div className="flex flex-col gap-6 max-w-lg">
               <p className="text-[40px] font-bold text-[#000000]">
@@ -138,36 +138,36 @@ export const FeaturesSection = () => {
             <Image
               src="/assets/targeting.png"
               alt="Features"
-              width={624}
-              height={624}
+              width={800}
+              height={800}
               className="w-full h-full object-cover mx-auto hidden md:block"
             />
 
             <Image
               src="/assets/targeting.png"
               alt="Features"
-              width={340}
-              height={340}
+              width={500}
+              height={500}
               className="w-full h-full object-cover mx-auto block md:hidden"
             />
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 w-full">
+        <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 w-full">
           <div className="flex-1">
             <Image
               src="/assets/subscription.png"
               alt="Features"
-              width={624}
-              height={624}
+              width={800}
+              height={800}
               className="w-full h-full object-cover mx-auto hidden md:block"
             />
 
             <Image
               src="/assets/subscription.png"
               alt="Features"
-              width={340}
-              height={340}
+              width={500}
+              height={500}
               className="w-full h-full object-cover mx-auto block md:hidden"
             />
           </div>

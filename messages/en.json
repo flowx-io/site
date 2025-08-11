@@ -300,5 +300,31 @@
       "phone": "+966 11 500 7890"
     },
     "copyright": "© 2025 FlowX - The leading system for managing charitable organizations in the Arab world. All rights reserved."
+  },
+  "services": {
+    "card1": {
+      "title": "The first system of its kind for managing charitable organizations in the Arab world",
+      "description": "Real-time statistics and advanced performance indicators for all aspects of charitable work with smart analytics",
+      "button": "30-Day Free Trial"
+    },
+    "card2": {
+      "title": "Secure and reliable payment for your charitable campaigns",
+      "description": "We provide an encrypted electronic payment system that ensures donor data protection and ease of money transfer with complete transparency and peace of mind.",
+      "description-mobile": "Diverse payment options suitable for all donors, wherever they are."
+    },
+    "card3": {
+      "title": "Advanced Reports",
+      "description": "Get accurate insights that help you make strategic decisions through smart reports.",
+      "description-mobile": "Diverse payment options suitable for all donors, wherever they are."
+    },
+    "card4": {
+      "title": "Comprehensive management for employees",
+      "title-highlight": "employees",
+      "description": "Organize the team and volunteers with high efficiency"
+    },
+    "card5": {
+      "title": "Advanced Security",
+      "description": "Data protection with the highest standards"
+    }
   }
 }

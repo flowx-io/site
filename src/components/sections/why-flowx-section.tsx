@@ -26,7 +26,7 @@ export const WhyFlowx = () => {
         </Button>
       </div>
 
-      <div className="flex flex-col gap-8 pb-8 md:flex-row md:pb-0">
+      <div className="flex flex-col gap-8 pb-8 lg:flex-row md:pb-0">
         <Card
           icon="/icons/user-love-bg-grad.svg"
           title={t("cards.stronger-relationships.title")}

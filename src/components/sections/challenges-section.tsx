@@ -26,7 +26,7 @@ export const ChallengesSection = () => {
           {t("description")}
         </p>
 
-        <div className="flex w-full max-w-4xl flex-col gap-8 px-4 pb-12 md:flex-row md:px-0">
+        <div className="flex w-full max-w-4xl flex-col gap-8 px-3 pb-12 md:flex-row mx-auto">
           <ChallengeCard
             className="border-[1.5px] border-[#EDEDF1] [box-shadow:0_4px_8px_8px_rgba(0,0,0,0.02)] [background:linear-gradient(175deg,var(--tags-eror-bg,#FEF2F2)_0.84%,#FFF_18.4%)]"
             icon={<ChallengeIcon />}
