@@ -29,7 +29,7 @@ export const Header = async () => {
   ];
 
   return (
-    <header className="container mx-auto pt-8">
+    <header className="max-w-5xl mx-auto pt-8">
       <div className="py-3 px-4 flex justify-between items-center rounded-full bg-[rgba(248,248,248,0.19)] backdrop-blur-[2px] border border-[#EDEDF1]">
         <div className="flex items-center justify-between gap-4 px-3">
           <Image

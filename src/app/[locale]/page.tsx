@@ -1,10 +1,10 @@
 import { HeroSection } from "@/components/sections/hero-section";
 import { ChallengesSection } from "@/components/sections/challenges-section";
-// import { ServicesSection } from "@/components/sections/services-section";
+import { ServicesSection } from "@/components/sections/services-section";
 import { SolutionsSection } from "@/components/sections/solutions.section";
 import { WhyFlowx } from "@/components/sections/why-flowx-section";
 import { FeaturesSection } from "@/components/sections/features-section";
-import { SuccessStorySection } from "@/components/sections/success-story-section";
+// import { SuccessStorySection } from "@/components/sections/success-story-section";
 import { ContactUsSection } from "@/components/sections/contact-us-section";
 import { Footer } from "@/components/footer";
 
@@ -12,12 +12,12 @@ export default function Home() {
   return (
     <div className="space-y-8 md:space-y-20">
       <HeroSection />
-      {/* <ServicesSection /> */}
+      <ServicesSection />
       <SolutionsSection />
       <ChallengesSection />
       <WhyFlowx />
       <FeaturesSection />
-      <SuccessStorySection />
+      {/* <SuccessStorySection /> */}
       <ContactUsSection />
       <Footer />
     </div>

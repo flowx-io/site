@@ -22,7 +22,7 @@ export const Hero = () => {
         {t("description")}
       </p>
 
-      <div className="flex w-full flex-col-reverse items-center justify-center gap-4 pb-4 md:flex-row">
+      <div className="flex w-full flex-col items-center justify-center gap-4 pb-4 md:flex-row">
         <Button className="h-auto w-full gap-2 rounded-full bg-[#138870] px-8 py-4 hover:bg-[#138870]/90 md:w-fit">
           <Image src="/icons/rocket.svg" alt="arrow" width={24} height={24} />
           <span className="font-bold text-white">{t("free-trial")} </span>
