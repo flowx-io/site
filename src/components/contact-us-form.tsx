@@ -192,23 +192,19 @@ export const ContactUsForm = () => {
 };
 
 const PhoneInput = ({ ...props }: React.ComponentProps<"input">) => {
-  const lang = useLocale()
-  console.log("lang", lang)
-
   return (
     <Input
       data-slot="phone-input"
       {...props}
       className={cn(
         props.className,
-        // "!rounded-none",
       )}
       style={{
         ...props.style,
-        borderTopLeftRadius: lang === "ar" ? "0px" : "8px",
-        borderTopRightRadius: lang === "ar" ? "8px" : "0px",
-        borderBottomLeftRadius: lang === "ar" ? "0px" : "8px",
-        borderBottomRightRadius: lang === "ar" ? "8px" : "0px",
+        borderTopLeftRadius: "0px",
+        borderTopRightRadius: "8px",
+        borderBottomLeftRadius: "0px",
+        borderBottomRightRadius: "8px",
       }}
     />
   )
@@ -238,7 +234,7 @@ const CountrySelect = ({
     <div
       className={cn(
         "border-input rounded-md bg-background text-muted-foreground focus-within:border-ring focus-within:ring-ring/50 hover:bg-accent hover:text-foreground has-aria-invalid:border-destructive/60 has-aria-invalid:ring-destructive/20 dark:has-aria-invalid:ring-destructive/40 relative inline-flex items-center self-stretch border py-2 ps-3 pe-2 transition-[color,box-shadow] outline-none focus-within:z-10 focus-within:ring-[3px] has-disabled:pointer-events-none has-disabled:opacity-50",
-        lang === "ar" ? "rounded-s-none" : "rounded-e-none",
+        lang === "en" ? "rounded-e-none" : "rounded-s-none",
       )}
     >
       <select
